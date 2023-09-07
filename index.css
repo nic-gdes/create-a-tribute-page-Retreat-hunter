@@ -1,0 +1,128 @@
+body {
+    margin: 0 auto;
+}
+
+#main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3rem;
+    align-items: center;
+    margin: 0rem 2rem;
+}
+
+@media only screen and (max-width:500px){
+    #main {
+        margin: 0rem 1rem;
+    }
+}
+
+#hero{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./Images/LilUzi_Cover.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+#title {
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+p {
+    position: relative;
+    font-size: 1.5rem;
+}
+
+#tribute-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* margin: 0rem 2rem; */
+    align-items: center;
+    justify-content: center;
+    margin: inherit;
+
+}
+
+.info {
+    padding: 0rem 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #tribute-info {
+        font-size: 1rem;
+    }
+
+    .info {
+        padding: 0 1rem;
+    }
+
+    .info p {
+        font-size: .8rem;
+    }
+}
+
+#uzi-img {
+    background-attachment: fixed;
+    height: 66vh;
+    width: 100vw;
+    background-image: url(./Images/Prada_Uzi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+#img-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2rem;
+    width: -webkit-fill-available;
+    margin-top: 3rem;
+}
+
+#img-div img {
+    width: 300px;
+}
+
+@media only screen and (max-width: 680px) {
+    #img-div img {
+        width: 150px;
+    }
+}
+
+.discography {
+    padding: 0rem 2rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .discography {
+        padding: 0 1rem;
+    }
+}
+
+#tribute-link {
+    color: pink;
+    font-size: 1.25rem;
+}
